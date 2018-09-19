@@ -5,7 +5,7 @@
 You simply need to require it through Composer:
 
 ```
-$ composer require tamkeenlms/mobily-sms-api
+$ composer require isaadsalman/mobily-sms-api
 ```
 
 ## How it works
