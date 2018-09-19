@@ -1,5 +1,5 @@
 {
-  "name": "tamkeenlms/mobily-sms-api",
+  "name": "iSaadSalman/mobily-sms-api",
   "description": "A non-official PHP client for Mobily's SMS service API",
   "type": "library",
   "keywords": [
