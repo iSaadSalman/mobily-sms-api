@@ -47,7 +47,15 @@
 
 			// Set a default "domain name"
 			if(empty($this->paramDefaults['domainName'])){
-				$this->paramDefaults['domainName'] = $_SERVER['SERVER_NAME'];
+				if (isset($_SERVER['SERVER_NAME'])) {
+					$this->paramDefaults['domainName'] = $_SERVER['SERVER_NAME'];
+					
+				} elseif( function_exists('url')) { // laravel specific
+					$this->paramDefaults['domainName'] = url('/');
+				} else { // empty
+					$this->paramDefaults['domainName'] = '';
+				}
+			
 			}
 		}
 
